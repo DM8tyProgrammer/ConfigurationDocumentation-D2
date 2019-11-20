@@ -1,0 +1,24 @@
+{
+  "groups": [
+  ],
+  "properties": [
+    //    {
+    //      "name": "db.additional-properties.batchPerformanceWorkaround",
+    //      "type": "java.lang.Boolean"
+    //    },
+    //    {
+    //      "name": "db.additional-properties.connectionRetryDelay",
+    //      "type": "java.lang.Integer"
+    //    },
+    //    {
+    //      "name": "db.additional-properties.dumpQueriesOnException",
+    //      "type": "java.lang.Boolean"
+    //    },
+    //    {
+    //      "name": "db.additional-properties.callableStmtCacheSize",
+    //      "type": "java.lang.Integer"
+    //    }
+  ],
+  "hints": [
+  ]
+}

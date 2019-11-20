@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "mighty/db",
+  "title": "Database Configuration",
+  "description": "Applicable database properties",
+  "type": "object",
+  "properties": {
+    "db": {
+      "type": "object",
+      "description": "DB configuration",
+      "allOf": [
+        {
+          "$comment": "static properties",
+          "properties": {
+            "hostname": {
+              "type": "string",
+              "description": "Hostname of db"
+            },
+            "port": {
+              "type": "integer",
+              "default": 0,
+              "description": "port of db"
+            },
+            "username": {
+              "type": "string",
+              "description": "DB user"
+            },
+            "password": {
+              "type": "string",
+              "description": "DB Password"
+            },
+            "type": {
+              "type": "string",
+              "description": "Type of db",
+              "enum": [
+                "oracle",
+                "mysql"
+              ],
+              "default": "mysql"
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "mysql"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "dumpQueriesOnException": {
+                "type": "boolean"
+              },
+              "callableStmtCacheSize": {
+                "type": "integer"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "oracle"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "batchPerformanceWorkaround": {
+                "type": "boolean"
+              },
+              "connectionRetryDelay": {
+                "type": "integer"
+              }
+            }
+          }
+        }
+      ],
+      "required": [
+        "hostname",
+        "port",
+        "type"
+      ]
+    }
+  }
+}

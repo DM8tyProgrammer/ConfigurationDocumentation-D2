@@ -1,0 +1,8 @@
+db:
+  hostname: localhost
+  type: oracle
+  username: user
+  batchPerformanceWorkaround: false
+  connectionRetryDelay: 23
+  port: 1
+  password: username

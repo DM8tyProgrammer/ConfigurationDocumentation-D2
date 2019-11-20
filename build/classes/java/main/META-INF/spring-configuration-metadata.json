@@ -1,0 +1,103 @@
+{
+  "groups": [
+    {
+      "name": "db",
+      "type": "mighty.config.OracleConfiguration",
+      "sourceType": "mighty.config.OracleConfiguration"
+    },
+    {
+      "name": "db",
+      "type": "mighty.config.MysqlConfiguration",
+      "sourceType": "mighty.config.MysqlConfiguration"
+    }
+  ],
+  "properties": [
+    {
+      "name": "db.batch-performance-workaround",
+      "type": "java.lang.Boolean",
+      "sourceType": "mighty.config.OracleConfiguration",
+      "defaultValue": false
+    },
+    {
+      "name": "db.callable-stmt-cache-size",
+      "type": "java.lang.Integer",
+      "sourceType": "mighty.config.MysqlConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.connection-retry-delay",
+      "type": "java.lang.Integer",
+      "sourceType": "mighty.config.OracleConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.dump-queries-on-exception",
+      "type": "java.lang.Boolean",
+      "sourceType": "mighty.config.MysqlConfiguration",
+      "defaultValue": false
+    },
+    {
+      "name": "db.hostname",
+      "type": "java.lang.String",
+      "description": "Hostname of db",
+      "sourceType": "mighty.config.OracleConfiguration"
+    },
+    {
+      "name": "db.hostname",
+      "type": "java.lang.String",
+      "description": "Hostname of db",
+      "sourceType": "mighty.config.MysqlConfiguration"
+    },
+    {
+      "name": "db.password",
+      "type": "java.lang.String",
+      "description": "DB Password",
+      "sourceType": "mighty.config.OracleConfiguration"
+    },
+    {
+      "name": "db.password",
+      "type": "java.lang.String",
+      "description": "DB Password",
+      "sourceType": "mighty.config.MysqlConfiguration"
+    },
+    {
+      "name": "db.port",
+      "type": "java.lang.Integer",
+      "description": "port of db",
+      "sourceType": "mighty.config.OracleConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.port",
+      "type": "java.lang.Integer",
+      "description": "port of db",
+      "sourceType": "mighty.config.MysqlConfiguration",
+      "defaultValue": 0
+    },
+    {
+      "name": "db.type",
+      "type": "mighty.config.DatabaseConfiguration$DBType",
+      "description": "Type of database",
+      "sourceType": "mighty.config.OracleConfiguration"
+    },
+    {
+      "name": "db.type",
+      "type": "mighty.config.DatabaseConfiguration$DBType",
+      "description": "Type of database",
+      "sourceType": "mighty.config.MysqlConfiguration"
+    },
+    {
+      "name": "db.username",
+      "type": "java.lang.String",
+      "description": "DB user",
+      "sourceType": "mighty.config.OracleConfiguration"
+    },
+    {
+      "name": "db.username",
+      "type": "java.lang.String",
+      "description": "DB user",
+      "sourceType": "mighty.config.MysqlConfiguration"
+    }
+  ],
+  "hints": []
+}
